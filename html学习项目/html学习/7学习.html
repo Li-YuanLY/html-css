@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <table align="center" border="1px" cellpadding="10" cellspacing="0" width="500">
+        <!-- table表格标签 -->
+        <!-- 表格属性：align规定表格相对周围元素的对齐方式 -->
+        <!-- border规定表格单元是否拥有边框，默认为“”表示无边框 -->
+        <!-- cellpadding，单元格补充，规定单元边沿与其文字（内容）之间的空白，默认1像素 -->
+        <!-- cellspacing，单元格间距，规定单元格和单元格之间的空白，默认2像素 -->
+        <!-- width规定表格宽度 height规定表格高度 -->
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+        <!-- th table head缩写，表头单元格标签，特殊单元格，有加粗居中效果 -->
+        <tr>
+            <td>力元</td>
+            <td>男</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>耶稣</td>
+            <td>神</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>？</td>
+            <td>武装直升机</td>
+            <td>？</td>
+        </tr>
+        <!-- tr行标签，但没有列标签，代之的是td单元格标签 -->
+    </table>
+    <table border="1" cellpadding="10" cellspacing="0" width="500" height="500">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <!-- 跨列合并单元格colspan，合并两个，多的删去 -->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <!-- 跨行合并单元格rowspan，合并两个，多的删去 -->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

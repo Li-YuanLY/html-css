@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像标签与路径</title>
+</head>
+
+<body>
+    <h4>sanna：</h4>
+    <img src="1.jpg" />
+    <!-- image source 图像 来源，src是img标签的必须属性，用于指明图像路径与文件名 -->
+    <!-- 图片必须和网页文件放一起，同一目录下 -->
+    <p></p>
+    <img src="1.jpg我裂开来" alt="sunna" />
+    <!-- 替换文本，图像无法显示显示文字 -->
+    <p></p>
+    <img src="1.jpg" alt="sunna" title="sunna酱" />
+    <!-- 提示文本，鼠标放在图像上提示的文字 -->
+    <p></p>
+    <img src="1.jpg" alt="sunna" title="sunna酱" width="500px" />
+    <!-- width给图像设定宽度 -->
+    <p></p>
+    <img src="1.jpg" alt="sunna" title="sunna酱" width="500" height="100" />
+    <!-- height给图片设置高度，宽高一般只设置一个，另一个自行调整 -->
+    <p></p>
+    <img src="1.jpg" alt="sunna" title="sunna酱" width="500" border="15" />
+    <!-- border给图像设定边框 -->
+    <!-- 图像属性可以有多个属性，之间不分先后顺序，引号内为属性值，src属性是必须的 -->
+    <p></p>
+    <img src="图片下一级路径/1.jpg" />
+    <!-- {相对路径}下一级路径 -->
+    <p></p>
+    <img src="../1.jpg" />
+    <!-- {相对路径} 上一级路径，因为上一级没此图片所以裂开来-->
+    <!-- 无论上一级，同一级，下一级，都是图片相对html文档的位置 -->
+    <p></p>
+    <img src="D:\桌面\html学习项目\html学习\1.jpg" />
+    <!-- 此为绝对路径，斜杠与相对路径不一样，不推荐使用，因为只适用单个电脑，不能换电脑 -->
+    <p></p>
+    <img src="https://www.logosc.cn/uploads/resources/2018/11/28/1543383329.jpg" />
+    <!-- 网络中也存在绝对路径，不过当网址不适用图片也会裂开 -->
+</body>
+
+</html>

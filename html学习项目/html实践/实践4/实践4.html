@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+
+<body>
+    <table cellpadding="5" width="1000" border="0">
+        <!-- border在做列表时可以做辅助线，最后调为0 -->
+        <form action="demo.php" method="post" name="1">
+            <h1>欢迎关注力元LY的个人博客~~</h1>
+            <!-- 第一行 -->
+            <h3>请先注册</h3>
+            <!-- 第二行 -->
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><label for="username">用户名</label></td>
+                <td><input type="text" name="username" value="请输入" id="username"></td>
+                <!-- 第三行 -->
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <label for="man">男<img src="..\实践2\图片\2.jpg" width="20"></label><input type="radio" name="sex"
+                        id="man">
+                    <label for="woman">女<img src="..\..\html学习\图片下一级路径\1.jpg" width="30"></label><input type="radio"
+                        name="sex" id="woman">
+                </td>
+                <!-- 第四行 -->
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>年
+                    <select>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                    </select>
+                    月
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    日
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <!-- 第五行 -->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">年龄</label></td>
+                <td><input type="text" name="age" id="age" maxlength="3"></td>
+                <!-- 第六行 -->
+            </tr>
+            <tr>
+                <td><label for="password">密码</label></td>
+                <td><input type="password" name="password" id="password"></td>
+                <!-- 第七行 -->
+            </tr>
+            <tr>
+                <td><label for="confirm password">确认密码</label></td>
+                <td><input type="password" name="Confirm Password" id="confirm password"></td>
+                <!-- 第八行 -->
+            </tr>
+            <tr>
+                <td>身份</td>
+                <td>
+                    <label for="tourist">游客</label><input type="checkbox" name="identity" id="tourist"
+                        checked="checked">
+                    <label for="member">会员</label><input type="checkbox" name="identity" id="member">
+                    <label for="master">站长</label><input type="checkbox" name="identity" id="master">
+                    <!-- 第九行 -->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="remarks">备注</label></td>
+                <td><textarea cols="50" rows="5" id="remarks"></textarea></td>
+                <!-- 第十行 -->
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="register" value="注册"></td>
+                <!-- 第十一行 -->
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="clause" id="clause" checked="checked"><label
+                        for="clause">我同意此条款与注册标准</label></td>
+                <!-- 第十二行 -->
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="#">我已注册，立即登陆</a></td>
+                <!-- 第十四行 -->
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h2>入站须知</h2>
+                </td>
+                <!-- 第十五行 -->
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>富强民主文明和谐自由平等公正法制爱国敬业诚信友善</li>
+                        <!-- 第十六行 -->
+                        <li>文明用语</li>
+                        <!-- 第十七行 -->
+                        <li>站长最帅</li>
+                        <!-- 第十八行 -->
+                    </ul>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
+<!-- 完工2022.9.19 -->

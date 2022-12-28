@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zn-CN" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素</title>
+</head>
+<body>
+    
+    <!-- 表单由表单域，表单控件，提示信息三部分组成 -->
+    <!-- 写表单元素前，要先写表单域将他们包含起来 -->
+    <form action="demo.php" method="post" name="1">
+     <h3>input输入表单元素</h3>
+     <!-- form标签用于定义表单域，会把范围内的表单元素信息提交给服务器，action填url地址，method填提交方式，name填表单域名称 -->
+     <!-- input 输入，input标签用于收集用户信息 -->
+     <!-- input标签中，包含一个type属性，根据不同的type属性输入字段拥有多种形式，即实现不同的控件类型 -->
+     用户名：<input type="text" name="username" value="请输入用户名"><br>
+     <!-- text 文本框，用户可以看到里面任何文字 -->
+     <!-- input标签为单标签，name是表单元素名字，value规定元素的值，这两个是每个表单元素都应有的属性值，主要给后台人员使用 -->
+     密码：<input type="password" name="password" maxlength="10"><br>
+     <!-- maxlength规定输入字符的最大长度 -->
+     <!-- password 密码框，用户看不到里面文字 -->
+     性别：男<input type="radio" name="sex" value="男">女<input type="radio" name="sex" value="女"><br>
+     <!-- radio 单选按钮，需要相同的名字可以实现多选一 -->
+     爱好：吃饭<input type="checkbox" name="hobby" value="吃饭">
+     睡觉<input type="checkbox" name="hobby" value="睡觉">
+     打豆豆<input type="checkbox" name="hobby" value="打豆豆" checked="checked"><br>
+     <!-- checkbox 复选框，可以实现多选 -->
+     <!-- checked用于单选与多选按钮，当打开页面是就默认选中这个按钮 -->
+     <input type="submit" name="提交" value="注册">
+     <!-- submit 提交按钮，点击提交按钮可将表单域里from的表单元素里面的值提交给后台服务器 -->
+     <input type="reset" name="reset" value="重新填写">
+     <!-- reset重置按钮，可还原表单元素为初始默认状态 -->
+     <input type="button" name="button" value="获取验证码">
+     <!-- button普通按钮，后期结合js搭配使用 -->
+     <label for="file">上传头像：</label><input type="file" name=“头像” value="头像" id="file" >
+     <!-- 文件域，上传文件使用的 -->
+     <!-- label标签用于绑定一个表单元素，点击<lable>标签内的文本时，浏览器会自动选择其对应的元素上，增强用户体验 -->
+     <h3>select下拉表单元素</h3>
+     请选择你的英雄
+     <select>
+        <option>臭豆腐</option>
+        <option selected="selected">腐乳</option>
+        <option>柠檬</option>
+        <option>老干妈</option>
+     </select>
+     <!-- select标签，如果有多个选项让用户选择，并想节约页面空间时，可以使用select定义下拉列表 -->
+     <!-- selected直接会将标记的变为默认值 -->
+     <h3>textarea文本域元素</h3>
+     留言：
+     <textarea cols="50" rows="5">留些东西再走吧qwq</textarea>
+     <!-- textarea标签，当用户输入内容过多，无法使用文本框表单的情况下，需要使用此标签定义多行文本输入更多文字 -->
+     <!-- cols每行显示多少字符，rows显示多少行，但这两个标签不用，css会用其他的代替 -->
+    </form>
+     
+</body>
+</html>
